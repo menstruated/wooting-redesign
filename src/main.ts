@@ -185,13 +185,13 @@ function showOrCreateMainWindow() {
 let tray: Tray | null = null;
 const contextMenu = Menu.buildFromTemplate([
   {
-    label: "Show Window",
+    label: "show app",
     click: () => {
       showOrCreateMainWindow();
     },
   },
   {
-    label: "Toggle Double Movement",
+    label: "toggle it",
     type: "checkbox",
     //We can tell from the ServiceState whether the service is enabled or not
     checked: false,
@@ -199,7 +199,7 @@ const contextMenu = Menu.buildFromTemplate([
   },
   { type: "separator" },
   {
-    label: "Quit",
+    label: "close the fucking thing",
     click: () => app.quit(),
   },
 ]);

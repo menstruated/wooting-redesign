@@ -1,11 +1,13 @@
 import React from "react";
 import { useRemoteValue } from "./ipc";
 
-import { Switch, Text, Flex, Spacer, Kbd } from "@chakra-ui/react";
+import { Switch, Text, Flex, Spacer, Kbd, useColorMode, color, useColorModeValue, } from "@chakra-ui/react";
 import { AdvancedSettingsCard } from "./AdvancedSettings";
 import { Card } from "./Components";
 
 function SimpleEnableCard() {
+  const { colorMode, toggleColorMode } = useColorMode();
+  const logoColour = useColorModeValue("#00E5FF", "#FFCECE");
   const [dmEnabled, setDmEnable] = useRemoteValue(
     "doubleMovementEnabled",
     false
@@ -13,7 +15,14 @@ function SimpleEnableCard() {
   function toggleDmEnabled() {
     const value = !dmEnabled;
     setDmEnable(value);
-  }
+/*   const renderColorScheme = () => {
+    if(colorMode === "light"){
+      return <Switch colorScheme="blue" isChecked={dmEnabled} as="div"></Switch>
+    } else{
+      return <Switch colorScheme="blue" isChecked={dmEnabled} as="div"></Switch>
+    }
+  } */
+}
 
   return (
     <Card p="6">
@@ -22,6 +31,7 @@ function SimpleEnableCard() {
           <Text variant="heading">cnr double movement lol</Text>
           <Spacer />
           {/* Render switch as Div so onClick doesn't get triggered twice: https://github.com/chakra-ui/chakra-ui/issues/2854 */}
+          {/* {renderColorScheme()} */}
           <Switch colorScheme="blue" isChecked={dmEnabled} as="div"></Switch>
         </Flex>
         <Text pt="6" fontSize="md" variant="body">
