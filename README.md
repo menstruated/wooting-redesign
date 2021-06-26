@@ -1,5 +1,5 @@
 # Wooting Double Movement 
-[just recoloured it because i didn't like the yellow lol and added funny anime girl and better info links]
+**Just recoloured it because i didn't like the yellow lol and added funny anime girl and better info links**
 
 One-click install for getting double movement in Fortnite.
 
