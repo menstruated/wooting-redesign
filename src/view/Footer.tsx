@@ -17,7 +17,7 @@ export function Footer() {
         </Link>
       </Text>
       <Text variant="body" fontSize="sm">
-        <Link href="https://pronhub.com" isExternal>
+        <Link href="https://pornhub.com" isExternal>
           Powered by connor's big willy
           <ExternalLinkIcon mx="2px" />
         </Link>
