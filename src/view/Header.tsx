@@ -22,7 +22,7 @@ declare module "react" {
 
 export function Header() {
   const { colorMode, toggleColorMode } = useColorMode();
-  const logoColour = useColorModeValue("#191919", "white");
+  const logoColour = useColorModeValue("#00E5FF", "#FFCECE");
 
   return (
     <Flex

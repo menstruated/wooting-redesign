@@ -207,7 +207,7 @@ const contextMenu = Menu.buildFromTemplate([
 function create_tray() {
   if (!tray) {
     tray = new Tray(`${__dirname}/../build/icon.ico`);
-    tray.setToolTip("Wooting Double Movement");
+    tray.setToolTip("cnr double movement lol");
     tray.on("double-click", () => {
       showOrCreateMainWindow();
     });
@@ -338,7 +338,7 @@ class ServiceManager {
   onError = (error: Error) => {
     console.error(error);
     dialog.showErrorBox(
-      "Wooting Double Movement errored",
+      " Double Movement errored",
       `An unexpected error occurred in the service, it's going to be disabled, please try again.\n\nPlease ensure that "Nefarius Virtual Gamepad Emulation Bus" is correctly installed.\n\n${error}`
     );
     this.set_double_movement_enabled(false);
