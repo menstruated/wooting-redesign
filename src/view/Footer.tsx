@@ -11,14 +11,14 @@ export function Footer() {
   return (
     <Flex p="6" pt="0" justifyContent="space-between">
       <Text variant="body" fontSize="sm">
-        <Link href="https://wooting.io/double-movement" isExternal>
+        <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" isExternal>
           More information
           <ExternalLinkIcon mx="2px" />
         </Link>
       </Text>
       <Text variant="body" fontSize="sm">
-        <Link href="https://github.com/ViGEm" isExternal>
-          Powered by ViGEm
+        <Link href="https://pronhub.com" isExternal>
+          Powered by connor's big willy
           <ExternalLinkIcon mx="2px" />
         </Link>
       </Text>

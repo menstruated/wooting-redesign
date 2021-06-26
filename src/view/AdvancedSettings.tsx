@@ -73,7 +73,7 @@ function AngleSlider(
         {...rest}
       >
         <SliderTrack>
-          <SliderFilledTrack backgroundColor="yellow.500" />
+          <SliderFilledTrack backgroundColor="blue.500" />
         </SliderTrack>
         <SliderThumb _focus={{ boxShadow: "base" }} />
       </Slider>
@@ -244,7 +244,7 @@ export function KeyBinding() {
     });
   }
 
-  const iconColor = "yellow.500";
+  const iconColor = "blue.500";
 
   return (
     <>
@@ -406,7 +406,7 @@ export function AdvancedSettingsCard() {
                 fontSize="sm"
                 onClick={setDefaultSettings}
               >
-                Reset settings to Wooting recommended
+                Click here to reset to recommended settings
               </Link>
             </VStack>
           </AccordionPanel>

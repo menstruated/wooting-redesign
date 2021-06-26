@@ -14,13 +14,13 @@ const darkTextColour = "#828e9e";
 const theme = extendTheme({
   shadows: { outline: "0 !important" },
   colors: {
-    yellow: {
+    blue: {
       "50": "#FFF8E5",
       "100": "#FFECB8",
       "200": "#FFE08A",
       "300": "#FFD45C",
       "400": "#FFC82E",
-      "500": "#FFBC00",
+      "500": "#00E5FF",
       "600": "#CC9600",
       "700": "#997100",
       "800": "#664B00",

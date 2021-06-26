@@ -19,10 +19,10 @@ function SimpleEnableCard() {
     <Card p="6">
       <Flex direction="column" onClick={toggleDmEnabled} cursor="pointer">
         <Flex>
-          <Text variant="heading">Enable Double Movement</Text>
+          <Text variant="heading">cnr double movement lol</Text>
           <Spacer />
           {/* Render switch as Div so onClick doesn't get triggered twice: https://github.com/chakra-ui/chakra-ui/issues/2854 */}
-          <Switch colorScheme="yellow" isChecked={dmEnabled} as="div"></Switch>
+          <Switch colorScheme="blue" isChecked={dmEnabled} as="div"></Switch>
         </Flex>
         <Text pt="6" fontSize="md" variant="body">
           Or use the hotkey <Kbd>Ctrl</Kbd>+<Kbd>P</Kbd> to toggle double
